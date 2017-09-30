@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haipenglu.tplink_smartplug.DeviceActivity">
+
+    <Button
+        android:id="@+id/B_TurnOff"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/colorAccent"
+        android:onClick="turnOff"
+        android:text="Turn OFF"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/B_TurnOn"
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        android:id="@+id/B_TurnOn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_green_light"
+        android:onClick="turnOn"
+        android:text="Turn ON"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_Register"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/B_RtInfo"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="getRTInfo"
+        android:text="RealTime Info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_TurnOn"
+        android:layout_marginStart="50dp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_RtInfo" />
+
+    <Button
+        android:id="@+id/B_Status"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:onClick="checkStatus"
+        android:text="CheckStatus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info"
+        android:layout_marginStart="50dp" />
+
+    <EditText
+        android:id="@+id/ET_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Label"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/B_Register"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="77dp"
+        android:onClick="Register"
+        android:text="Register"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/B_PowerUsage"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="powerUsage"
+        android:text="Power Usage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B_TurnOff"
+        android:layout_marginEnd="40dp" />
+
+    <Button
+        android:id="@+id/B_Sync"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:onClick="DataSync"
+        android:text="DataSync"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info"
+        android:layout_marginEnd="40dp" />
+
+</android.support.constraint.ConstraintLayout>
